@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h4>My Document</h4>
+    <div class="toolbar">
+      <div class="section font">
+        <p>Font</p>
+        <button id="bold"><b>B</b></button>
+        <button id="italic"><i>I</i></button>
+        <button id="underline"><u>U</u></button>
+      </div>
+      <div class="section align">
+        <p>Align</p>
+        <button id="align-left" class="left">L</button>
+        <button id="align-center" class="center">C</button>
+        <button id="align-right" class="right">R</button>
+        <button id="align-justify" class="justify">J</button>
+      </div>
+      <div class="section colors">
+        <p>Colors</p>
+        <input type="color" id="text-color" class="text-color" value="#000000">
+        <input type="color" id="background-color" class="background-color" value="#ffffff">
+      </div>
+      <!-- Undo and Redo buttons with Font Awesome icons -->
+      <div class="section">
+        <button id="undo" class="icon-button" disabled><i class="fas fa-undo"></i></button>
+        <button id="redo" class="icon-button" disabled><i class="fas fa-redo"></i></button>
+      </div>
+      <!-- Save button -->
+      <div class="section">
+        <button id="save" class="icon-button"><i class="fas fa-save"></i> Save</button>
+      </div>
+      <!-- Word count display -->
+      <div class="section" style="margin-top: 200px;">
+        <p>Word Count:</p>
+        <span id="word-count">0</span>
+      </div>
+    </div>
+    <div class="artboard" contenteditable="true"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
